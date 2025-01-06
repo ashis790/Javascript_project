@@ -1,0 +1,11 @@
+const express = require('express')
+const app = express()
+
+
+app.get('/about/:maa',(req,res)=>{
+    const maa_ka_swarup = req.params.maa
+    res.send(`maa ke anginat swarup ho sakte hai uname se ${maa_ka_swarup} ak hai `)
+})
+app.listen(3000,()=>{
+    console.log('server is running')
+})
